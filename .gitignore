@@ -1,0 +1,14 @@
+.vscode
+.DS_Store
+.idea
+node_modules
+.next
+.swc
+out
+config/posts.json
+public/rss.xml
+.env.local
+yarn.lock
+meetings.json
+.netlify
+.env
