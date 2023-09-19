@@ -7,34 +7,34 @@ const features = [
   {
     name: "Specification",
     description:
-      "Allows you to define the interfaces of asynchronous APIs and is protocol agnostic.",
+      "Allows you to simplify the specifications draft",
     links: [{ label: "Documentation", href: "docs/specifications/latest", id:'whyasyncapi-spec-documentation-link' }],
   },
   {
-    name: "Document APIs",
+    name: "Integrated Technology",
     description:
       "Use our tools to generate documentation at the build level, on a server, and on a client.",
     links: [
       {
-        label: "HTML Template",
+        label: "Continuous Innovation",
         href: "https://github.com/asyncapi/html-template",
         id:'whyasyncapi-apis-htmltemplate-link'
       },
       {
-        label: "React Component",
+        label: " Continuous Quality",
         href: "https://github.com/asyncapi/asyncapi-react/",
         id:'whyasyncapi-apis-reactcomponents-link'
       },
     ],
   },
   {
-    name: "Code Generation",
+    name: "Test Generation",
     description:
       "Generate documentation, Code (TypeScript, Java, C#, etc), and more out of your AsyncAPI files.",
     links: [{ label: "Generator", href: "tools/generator", id:'whyasyncapi-generation-generator-link' }, { label: "Modelina", href: "tools/modelina", id:'whyasyncapi-generation-modelina-link' }],
   },
   {
-    name: "Community",
+    name: "AI Ready",
     description: "We're a community of great people who are passionate about AsyncAPI and event-driven architectures.",
     links: [
       { label: "Join our Slack", href: "https://asyncapi.com/slack-invite", id:'whyasyncapi-community-slack-link' },
@@ -47,7 +47,7 @@ const features = [
     links: [{ label: "Read more about Open Governance", href: "blog/governance-motivation", id:'whyasyncapi-governance-more-link' }, { label: "TSC Members", href: "community/tsc", id:'whyasyncapi-governance-tsc-link' }],
   },
   {
-    name: "And much more...",
+    name: "Value Stream...",
     description:
       "We have many different tools and welcome you to explore our ideas and propose new ideas to AsyncAPI.",
     links: [{ label: "View GitHub Discussions", href: "https://github.com/asyncapi/community/discussions", id:'whyasyncapi-muchmore-github-link' }],
@@ -63,10 +63,10 @@ export default function Features() {
           typeStyle="heading-lg"
           className="mt-2"
         >
-          Why AsyncAPI?
+          Why GenisLab?
         </Heading>
         <Paragraph className="mt-2 max-w-prose mx-auto">
-          Improving the current state of Event-Driven Architectures (EDA)
+          Improving the current state of Test-Driven Architectures (TDA)
         </Paragraph>
         <div className="mt-12 text-left">
           <ul className="grid  grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

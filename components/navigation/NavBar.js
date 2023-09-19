@@ -21,7 +21,7 @@ const isMobile = isMobileDevice();
 
 export default function NavBar({
   className = '',
-  hideLogo = false,
+  hideLogo = true,
 }) {
   const { asPath } = useRouter();
   const [open, setOpen] = useState();
@@ -86,7 +86,7 @@ export default function NavBar({
         <nav className="hidden lg:flex lg:items-center lg:justify-end space-x-6 xl:space-x-10 w-full">
           <div className="relative" onMouseLeave={() => showMenu(null)} ref={learningRef}>
             <NavItem
-              text="Docs"
+              text="Wiki"
               href='/docs'
               onClick={() => showOnClickMenu('learning')}
               onMouseEnter={() => showMenu('learning')}
@@ -97,7 +97,7 @@ export default function NavBar({
 
           <div className="relative" onMouseLeave={() => showMenu(null)} ref={toolingRef}>
             <NavItem
-              text="Tools"
+              text="Labs"
               href='/tools'
               onClick={() => showOnClickMenu('tooling')}
               onMouseEnter={() => showMenu('tooling')}
@@ -107,7 +107,7 @@ export default function NavBar({
           </div>
           <div className="relative" onMouseLeave={() => showMenu(null)} ref={apiRef}>
             <NavItem
-              text="Interfaces"
+              text="Tooling"
               href='/apis'
               onClick={() => showOnClickMenu('apis')}
               onMouseEnter={() => showMenu('apis')}

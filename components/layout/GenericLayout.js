@@ -30,6 +30,9 @@ export default function GenericLayout({
           {children}
         </div>
       </Container>
+      {/* <Footer>
+
+      </Footer> */}
     </>
   )
 }

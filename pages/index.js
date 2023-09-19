@@ -38,7 +38,7 @@ function HomePage() {
           <Hero className="mb-24" />
         </Container>
 
-        <Container className="text-center pb-12" wide as="section">
+        {/* <Container className="text-center pb-12" wide as="section">
           <Heading
             level="h3"
             typeStyle="heading-lg"
@@ -69,15 +69,15 @@ function HomePage() {
               <SapLogo className="mt-12 md:mt-2 lg:-mt-2 h-12 text-gray-400" />
             </li>
           </ul>
-        </Container>
+        </Container> */}
 
-        <div className="bg-dark py-12 mt-8">
+        {/* <div className="bg-dark py-12 mt-8">
           <Container wide as="section">
             <NewsletterSubscribe dark />
           </Container>
-        </div>
+        </div> */}
 
-        <Container className="text-center py-12" wide as="section">
+        {/* <Container className="text-center py-12" wide as="section">
           <Heading
             level="h3"
             typeStyle="heading-lg"
@@ -151,10 +151,10 @@ function HomePage() {
             </Container>
           </div>
 
-        </Container>
+        </Container> */}
 
 
-        <section className="pb-20" role="contentinfo" aria-label='Our Sponsors'>
+        {/* <section className="pb-20" role="contentinfo" aria-label='Our Sponsors'>
           <Container className="text-center pb-6" wide as="section">
             <Heading
               level="h3"
@@ -204,8 +204,8 @@ function HomePage() {
               </TextLink>
             </Paragraph>
           </Container>
-        </section>
-        <Container className="text-center py-6 pb-20" wide>
+        </section> */}
+        {/* <Container className="text-center py-6 pb-20" wide>
           <Heading level="h3" typeStyle="heading-lg" className="mb-4">
             Supported by
           </Heading>
@@ -251,7 +251,7 @@ function HomePage() {
               authorDescription="CEO at Streamdata.io"
             />
           </ul>
-        </Container>
+        </Container> */}
       </main>
     </>
   )
