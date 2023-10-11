@@ -4,6 +4,7 @@ import Container from './Container'
 import Footer from '../Footer'
 import AnnouncementHero from '../campaigns/AnnoucementHero'
 import StickyNavbar from '../navigation/StickyNavbar'
+import Countdowns from '../counter';
 
 export default function GenericLayout({
   title,
@@ -29,6 +30,8 @@ export default function GenericLayout({
         <div id="main-content">
           {children}
         </div>
+        <Countdowns />
+
       </Container>
       {/* <Footer>
 
