@@ -44,9 +44,9 @@ jobs:
           static_site_generator: next
 
       - name: Install dependencies
-        run: pnpm install
+        run: yarn install
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} pnpm build
+        run: ${{ steps.detect-package-manager.outputs.runner }} yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
