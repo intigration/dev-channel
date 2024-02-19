@@ -16,12 +16,13 @@ import GithubButton from "../buttons/GithubButton"
 import { SearchButton } from '../AlgoliaSearch';
 import IconLoupe from '../icons/Loupe';
 import Link from 'next/link';
+// import AsyncAPILogoLight from "../AsyncAPILogoLight";
 
 const isMobile = isMobileDevice();
 
 export default function NavBar({
-  className = '',
-  hideLogo = false,
+  className = 'inline-flex',
+  hideLogo = true,
 }) {
   const { asPath } = useRouter();
   const [open, setOpen] = useState();
@@ -54,20 +55,21 @@ export default function NavBar({
   }, [asPath])
 
   return (
-    <div className={`bg-white ${className} z-50`}>
+    <div className={`bg-orange ${className} z-2`}>
       <a href="#main-content" className="block md:inline-block absolute transform -translate-y-20 focus:translate-y-0 bg-gray-100 text-gray-700 p-5 text-md font-semibold" alt="Skip to main content">Skip to main content</a>
-      <div className="flex w-full justify-between items-center py-6 lg:justify-start lg:space-x-10">
-        {!hideLogo && (
-          <div className="lg:w-auto lg:flex-1">
+      <div className="flex w-full justify-between items-center py-6 lg:justify-start sm:space-x-10">
+        {/* {!hideLogo && ( */}
+          <div className="mt-6 mb-6 w-full">
             <div className="flex">
               <Link href="/">
                 <a className="cursor-pointer">
-                  <AsyncAPILogo className="h-8 w-auto sm:h-8" />
+                  {/* <AsyncAPILogo className="h-8 w-auto sm:h-8" /> */}
+                  <AsyncAPILogo />
                 </a>
               </Link>
             </div>
           </div>
-        )}
+        {/* )} */}
 
         <div className="flex flex-row items-center justify-center -mr-2 -my-2 lg:hidden">
           <SearchButton
@@ -75,18 +77,18 @@ export default function NavBar({
           >
             <IconLoupe />
           </SearchButton>
-          <button onClick={() => setMobileMenuOpen(true)} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+          <Button onClick={() => setMobileMenuOpen(true)} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
             <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
               <title>Menu</title>
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-          </button>
+          </Button>
         </div>
 
         <nav className="hidden lg:flex lg:items-center lg:justify-end space-x-6 xl:space-x-10 w-full">
           <div className="relative" onMouseLeave={() => showMenu(null)} ref={learningRef}>
             <NavItem
-              text="Docs"
+              text="Wiki"
               href='/docs'
               onClick={() => showOnClickMenu('learning')}
               onMouseEnter={() => showMenu('learning')}
@@ -97,7 +99,7 @@ export default function NavBar({
 
           <div className="relative" onMouseLeave={() => showMenu(null)} ref={toolingRef}>
             <NavItem
-              text="Tools"
+              text="Labs"
               href='/tools'
               onClick={() => showOnClickMenu('tooling')}
               onMouseEnter={() => showMenu('tooling')}
@@ -107,7 +109,7 @@ export default function NavBar({
           </div>
           <div className="relative" onMouseLeave={() => showMenu(null)} ref={apiRef}>
             <NavItem
-              text="Interfaces"
+              text="Tooling"
               href='/apis'
               onClick={() => showOnClickMenu('apis')}
               onMouseEnter={() => showMenu('apis')}
@@ -137,7 +139,7 @@ export default function NavBar({
               <IconLoupe />
             </SearchButton>
 
-            <GithubButton text="Project at Code" href="https://github.com/asyncapi/spec" className="py-2 ml-2" inNav="true" />
+            <GithubButton text="" href="https://#" className="py-2 ml-2" inNav="false" />
           </div>
         </nav>
 

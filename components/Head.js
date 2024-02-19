@@ -22,9 +22,9 @@ export default function HeadComponent({
 
   //enable google analytics
   if (typeof window !== 'undefined') {
-    TagManager.initialize({gtmId: 'GTM-'})
-    ReactGA.initialize('UA-109278936-1')
-    ReactGA.pageview(window.location.pathname + window.location.search)
+    // TagManager.initialize({gtmId: 'GTM-'})
+    // ReactGA.initialize('UA-109278936-1')
+    // ReactGA.pageview(window.location.pathname + window.location.search)
   }
 
   return (
